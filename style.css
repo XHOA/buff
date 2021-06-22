@@ -1,0 +1,56 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+}
+
+.form__input {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding-top: 5%;
+}
+
+.form__input input {
+    font-size: 30px;
+}
+
+.form__input button {
+    font-size: 30px;
+}
+
+.form__input .select__input {
+    font-size: 20px;
+}
+
+
+.result__board {
+    background-color: rgb(77, 76, 76);
+    padding: 50px;
+}
+
+.result__board-text {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+}
+
+
+#task_error,
+#task_order {
+    color: red;
+}
