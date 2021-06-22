@@ -43,8 +43,6 @@ form.addEventListener('submit', async event => {
     let limitTime = parseInt(loopLimit);
     if(isNaN(limitTime) || limitTime < 1) return console.log('error')
 
-
-
     if (typeof(Storage) !== "undefined") {
 
         localStorage.setItem("pageId", pageId);
@@ -58,6 +56,7 @@ form.addEventListener('submit', async event => {
         try {
             await postMethod(accessToken, pageId, {link: postLink})
             taskDisplay.innerText = i.toString();
+            taskError.innerText = '';
         } catch (error) {
             taskError.innerText = error;
             console.log('ERRORRRRRRRRRRRRRRRRRRRRR');

@@ -16,6 +16,9 @@
                     <div class="result__board-text">Running task: <span class="fs-1" id="task_order">0</span></div>
                     <div class="result__board-text">Error: <span class="fs-1" id="task_error"></span></div>
                 </div>
+                <div class="graph__link">
+                    <a target="_blank" href="https://developers.facebook.com/tools/explorer/?method=POST&path=345667633755415%2Ffeed&version=v11.0&link=https%3A%2F%2Ffb.watch%2F6hc2nIN-4o%2F">Get Access Token Here</a>
+                </div>
                 <div class="mb-3">
                     <input class="form-control" type="text" id="page_id" placeholder="Page/Group ID" required value="">
                 </div>
@@ -23,13 +26,14 @@
                     <input class="form-control" type="text" id="access_token" placeholder="Access Token" required>
                 </div>
                 <div class="mb-3">
-                    <input class="form-control" type="text" id="post_link" placeholder="post link" required>
+                    <input class="form-control" type="text" id="post_link" placeholder="Link to share" required>
                 </div>
                 <div class="mb-3">
                     <input class="form-control" type="number" id="loop" placeholder="Loop" required value="20" min="1">
                 </div>
                 <button type="submit" class="btn btn-primary" id="form_btn">Run</button>
             </div>
+           
         </form>
     </div>
     <script src="./script.js"></script>

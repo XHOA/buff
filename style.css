@@ -54,3 +54,10 @@ html {
 #task_order {
     color: red;
 }
+
+
+
+.graph__link a {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
