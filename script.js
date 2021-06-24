@@ -54,9 +54,13 @@ form.addEventListener('submit', async event => {
 
     for(let i = 1; i<= parseInt(loopLimit); ++i) {
         try {
-            await postMethod(accessToken, pageId, {link: postLink})
+            let data = await postMethod(accessToken, pageId, {link: postLink})
+            console.log(data);
+            if(data.error) {
+                taskError.innerText = data.error.message;
+                break;
+            } else  taskError.innerText = '';
             taskDisplay.innerText = i.toString();
-            taskError.innerText = '';
         } catch (error) {
             taskError.innerText = error;
             console.log('ERRORRRRRRRRRRRRRRRRRRRRR');
